@@ -1,0 +1,89 @@
+body {
+    /* background-color: gray; */
+}
+
+div {
+
+    /* gap: 10px; */
+}
+
+.all {
+    background-color: gray;
+    margin: auto;
+    width: 1000px;
+    border: 5px solid;
+    padding: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+
+.flex {
+    height: auto;
+    background-color: black;
+    display: flex;
+
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: yellow;
+    border: solid 2px black;
+}
+
+.display-flex {
+    height: auto;
+    background-color: black;
+    display: flex;
+
+}
+
+#fd-row {
+
+    flex-direction: row;
+}
+
+#fd-row-rev {
+
+    flex-direction: row-reverse;
+
+}
+
+#fd-column {
+
+    flex-direction: column;
+
+}
+
+#fd-column {
+
+    flex-direction: column;
+
+}
+
+#fd-column-rev {
+
+    flex-direction: column-reverse;
+
+}
+
+#fw-nowrap {
+
+    flex-wrap: nowrap;
+
+}
+
+#fw-wrap {
+
+    flex-wrap: wrap;
+
+}
+#fw-wrap-rev{
+
+    flex-wrap:wrap-reverse ;
+}
