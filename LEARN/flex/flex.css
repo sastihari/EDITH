@@ -1,5 +1,10 @@
 body {
-    /* background-color: gray; */
+    /* background-image: linear-gradient(#EECCD3, #80C4B7, #EEC95C, #E3856B); */
+    
+    /* background-image: linear-gradient(#B7B9A8, #D1B5A3, #E36858, #0C0D0D); */
+    background-image: linear-gradient(#EECCD3, #80C4B7, #EEC95C, #E3856B,#B7B9A8, #D1B5A3, #E36858, #0C0D0D);
+    
+
 }
 
 div {
@@ -86,4 +91,26 @@ div {
 #fw-wrap-rev{
 
     flex-wrap:wrap-reverse ;
+}
+#ff{
+    flex-flow: row-reverse wrap-reverse ;
+    /* flex-flow: row-reverse wrap; */
+}
+#jc-fs{
+    justify-content: flex-start;
+}
+#jc-fe{
+    justify-content: flex-end;
+}
+#jc-c{
+    justify-content:center;
+}
+#jc-sb{
+    justify-content: space-between;
+}
+#jc-sa{
+    justify-content: space-around;
+}
+#jc-se{
+    justify-content: space-evenly;
 }
