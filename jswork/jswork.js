@@ -188,6 +188,26 @@
 
 //map
 
-var a=[6,2,3,4]
- var ans=a.map(e=>e**2)
- console.log(ans);
+// var a=[6,2,3,4]
+//  var ans=a.map(e=>e**2)
+//  console.log(ans);
+
+// function capitalizeNames(objects) {
+    
+//     return objects.map((obj) => obj.name.toUpperCase());
+//   }
+//   const arrayOfObjects = [
+//     { name: "john" },
+//     { name: "mary" },
+//     { name: "jane" }
+//   ];
+  
+//   const capitalizedNames = capitalizeNames(arrayOfObjects);
+//   console.log(capitalizedNames);
+
+// var a=["madara"]
+
+// newa=a.map(e=>e.toUpperCase());
+// console.log(newa);
+
+  

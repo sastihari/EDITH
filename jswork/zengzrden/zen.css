@@ -47,7 +47,7 @@ body {
     margin:0 auto;
     padding:0 13px;
     position:relative;
-    background:url(bg.gif) repeat-x #dfdfdf;
+    background:url(bg.gif) no-repeat #dfdfdf;
     border-left:1px solid #ffffff;
     border-right:1px solid #ffffff;
     color:#454545;
