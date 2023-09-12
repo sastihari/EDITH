@@ -24,14 +24,6 @@ div {
     text-align: center;
 }
 
-
-.flex {
-    height: auto;
-    background-color: black;
-    display: flex;
-
-}
-
 .box {
     margin: 10px;
     padding: 10px;
@@ -41,11 +33,15 @@ div {
     border: solid 2px black;
 }
 
-.display-flex {
-    height: auto;
+
+.flex {
+    height:auto;
     background-color: black;
     display: flex;
 
+}
+#df{
+    display: flex;
 }
 
 #fd-row {
@@ -113,4 +109,16 @@ div {
 }
 #jc-se{
     justify-content: space-evenly;
+}
+#ai-fs{
+    align-items: flex-start;
+}
+#ai-fe{
+    align-items: flex-end;
+}
+#ai-c{
+    align-items: center;
+}
+#ai-s{
+    align-items:stretch; 
 }
