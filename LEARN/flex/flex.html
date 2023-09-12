@@ -10,6 +10,7 @@
 
 <body>
     <div class="all">
+        <h1 class="content">._._.Properties for the Parent(flex container)._._.<br>*</h1>
         <h1 class="content">display:flex;</h1>
         <div class="flex" id="df">
             <div class="box">1</div>
@@ -150,7 +151,8 @@
 
         </div>
 
-        <hr style="border:5px solid black; border-radius:5px ;padding: 1px;">
+        <hr class="line">
+
 
         <h1 class="content">._._._._._._._._._.justify-content._._._._._._._._._.</h1>
 
@@ -202,7 +204,7 @@
             <div class="box">4</div>
         </div>
 
-        <hr style="border:5px solid black; border-radius:5px ;padding: 1px;">
+        <hr class="line">
 
         <h1 class="content">._._._._._._._._._.align-items._._._._._._._._._.</h1>
 
@@ -250,7 +252,7 @@
             <div class="box" style="height: 10px;text-align: center;">___4___</div>
         </div>
 
-        <hr style="border:5px solid black; border-radius:5px ;padding: 1px;">
+        <hr class="line">
 
         <h1 class="content">._._._._._._._._._.align-content._._._._._._._._._.</h1>
         <p>
@@ -402,11 +404,13 @@
 
         </div>
 
-        <hr style="border:5px solid black; border-radius:5px ;padding: 1px;">
+        <hr class="line">
 
         <h1 class="content">._._._._._._._._._.gap._._._._._._._._._.</h1>
-        <p> <h2>Note:</h2>explicitly controls the space between flex items. It applies that spacing only between items not on the
-            outer edges.</p>
+        <p>
+        <h2>Note:</h2>explicitly controls the space between flex items. It applies that spacing only between items not
+        on the
+        outer edges.</p>
 
         <h1 class="content">gap:</h1>
         <div class="flex" id="g">
@@ -496,9 +500,35 @@
             <div class="box">18</div>
         </div>
 
+        <hr class="line">
 
+        <h1 class="content">._._.Properties for the Children(flex items)._._.<br>*</h1>
 
+        <h1 class="content">order</h1>
+        <p>By default, flex items are laid out in the source order. However, the order property controls the order in
+            which they appear in the flex container.</p>
+        <p>*it is use to change the the order of the item ,<b>-it default is "0"</b></p>
+        <div class="flex" id="o">
+            <div class="box3">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box1">5</div>
+            <div class="box">6</div>
 
+        </div>
+
+        <h1 class="content">order</h1>
+        <p>This defines the ability for a flex item to grow if necessary. </p>
+        <div class="flex" id="o">
+            <div class="box"id="box-3">1</div>
+            <div class="box"id="box">2</div>
+            <div class="box"id="box">3</div>
+            <div class="box"id="box">4</div>
+            <div class="box"id="box-1">5</div>
+            <div class="box"id="box">6</div>
+
+        </div>
 
 
 
