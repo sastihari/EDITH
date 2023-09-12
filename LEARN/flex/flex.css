@@ -25,6 +25,7 @@ div {
 }
 
 .box {
+    text-align: center;
     margin: 10px;
     padding: 10px;
     height: 60px;
@@ -121,4 +122,47 @@ div {
 }
 #ai-s{
     align-items:stretch; 
+}
+#ai-b{
+    align-items:baseline;
+}
+#ac-fs{
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#ac-fe{
+    flex-wrap: wrap;
+    align-content:flex-end ;
+}
+#ac-c{
+    flex-wrap: wrap;
+    align-content:center ;
+}
+#ac-sb{
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#ac-sa{
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#ac-se{
+    flex-wrap: wrap;
+    align-content:space-evenly;
+}
+#g{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#g-rc{
+    flex-wrap: wrap;
+    gap: 10px 40px;
+}
+#g-r{
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+#g-c{
+    flex-wrap: wrap;
+    column-gap: 40px;
 }
