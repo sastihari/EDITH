@@ -42,6 +42,8 @@
 
 // let aaa:{name:string; age:number}={name:'madara';age:22}
 // console.log(aaa.name);
+
+
 // let arrobj: { name: string; age: number }[] = [{ name: 'madara', age: 22 }, { name: 'lucifer', age: 32 }]
 // console.log(arrobj);
 // console.log(arrobj[1]);
@@ -52,7 +54,7 @@
 //     })
 
 
-//
+// with return
 // let e:number;
 // let b:number
 // function add(e:number=2, b:number=5):number{
@@ -60,8 +62,10 @@
 // }
 // console.log(add(e,b));
 
+
+//optionaln
 // function ans(a:number,b:number,c?:number):number{
-//     if(typeof c!=='undefined'){
+//     if(typeof c!='undefined'){
 //         return a*b*c
 //     }
 //     return a*b
@@ -69,7 +73,7 @@
 // }
 // console.log(ans(2,2,2));
 
-//optional
+//optional&return
 // var arr=(a:number,b:number,c?:number):number=>{
 //         if(typeof c!=='undefined'){
 //             return a*b*c
@@ -80,7 +84,7 @@
     
 //     console.log(arr(2,2,2));
 
-//default value
+//default value &return
 
 // function val(a:number=3,b:number=4,c:number=5):number{
             
@@ -95,10 +99,10 @@
 
 //dynamic no of par
 
-function fbi(a:number,b:number,...rest:number[]):number{
-    return a+b+rest.reduce((p,c)=>p+c,0);
-}
-console.log(fbi(2,5,7,8,9,2,3,1,5));
+// function fbi(a:number,b:number,...r:number[]):number{
+//     return a+b+r.reduce((p,c)=>p+c,0);
+// }
+// console.log(fbi(2,5,7,8,9,2,3,1,5));
 
 
 

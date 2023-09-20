@@ -1,4 +1,3 @@
-"use strict";
 // now for proper way to typescript
 //type annotation
 // var a: number;
@@ -45,21 +44,22 @@
 //     if (e.age > 30) { 
 //     console.log(e.name);
 //     })
-//
+// with return
 // let e:number;
 // let b:number
 // function add(e:number=2, b:number=5):number{
 //     return e+b;
 // }
 // console.log(add(e,b));
+//optionaln
 // function ans(a:number,b:number,c?:number):number{
-//     if(typeof c!=='undefined'){
+//     if(typeof c!='undefined'){
 //         return a*b*c
 //     }
 //     return a*b
 // }
 // console.log(ans(2,2,2));
-//optional
+//optional&return
 // var arr=(a:number,b:number,c?:number):number=>{
 //         if(typeof c!=='undefined'){
 //             return a*b*c
@@ -67,14 +67,18 @@
 //         return a*b
 //     }
 //     console.log(arr(2,2,2));
-//default value
+//default value &return
 // function val(a:number=3,b:number=4,c:number=5):number{
 //                 return a*b*c
 //         }
 //         console.log(val());
 //dynamic no of par
-function fbi(a, b, ...rest) {
-    return a + b + rest.reduce((p, c) => p + c, 0);
+function fbi(a, b) {
+    var r = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        r[_i - 2] = arguments[_i];
+    }
+    return a + b + r.reduce(function (p, c) { return p + c; }, 0);
 }
 console.log(fbi(2, 5, 7, 8, 9, 2, 3, 1, 5));
 //annonymous
