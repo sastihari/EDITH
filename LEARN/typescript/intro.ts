@@ -112,13 +112,13 @@ const poco_price:p=21000
 const poco_RAM:r="8GB-RAM"
 const poco_camera="108-MP"
 
-const poco:mobile={
+const poco1:mobile={
     model:poco_model,
     price:poco_price,
     RAM:poco_RAM,
     camera:poco_camera
 };
-console.log(poco);
+console.log(poco1);
 
 //...............................INTERFACE...................
 
