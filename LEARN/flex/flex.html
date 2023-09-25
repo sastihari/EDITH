@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>flex</b></title>
+    <link rel="stylesheet" href="/LEARN/flex/flex.css">
+</head>
+
+<body>
+    <div class="all">
+        <h1 class="content">._._.Properties for the Parent(flex container)._._.<br>*</h1>
+        <h1 class="content">display:flex;</h1>
+        <div class="flex" id="df">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <h1 class="content">flex direction:row;</h1>
+        <div class="flex" id="fd-row">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <h1 class="content">flex direction:row-reverse;</h1>
+        <div class="flex" id="fd-row-rev">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <h1 class="content">flex direction:column;</h1>
+        <div class="flex" id="fd-column">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+
+        <h1 class="content">flex direction:column-revrse;</h1>
+        <div class="flex" id="fd-column-rev">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <h1 class="content">flex-wrap:nowrap;</h1>
+        <div class="flex" id="fw-nowrap">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+        </div>
+
+        <h1 class="content">flex-wrap:wrap;</h1>
+        <div class="flex" id="fw-wrap">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+
+        </div>
+
+        <h1 class="content">flex-wrap:wrap-reverse;</h1>
+        <div class="flex" id="fw-wrap-rev">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+
+        </div>
+
+        <h1 class="content">flex-flow:row-reverse wrap-reverse;---&etc</h1>
+        <p>
+        <h2>Note:</h2>This is a shorthand for the flex-direction and flex-wrap properties, which together define the
+        flex
+        container's main and cross axes. The default value is row nowrap.</p>
+        <p><b>eg:</b> it is the combination
+            of,"row","row-reverse","column","column-revrse"-"nowrap","wrap","wrap-reverse"==><b>{flex-flow: row-reverse
+                wrap-reverse ;}</b></p>
+
+        <div class="flex" id="ff">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+
+        </div>
+
+        <hr class="line">
+
+
+        <h1 class="content">._._._._._._._._._.justify-content._._._._._._._._._.</h1>
+
+        <h1 class="content">justify-content:flex-start;</h1>
+        <div class="flex" id="jc-fs">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <h1 class="content">justify-content:flex-end;</h1>
+        <div class="flex" id="jc-fe">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+
+        <h1 class="content">justify-content:center;</h1>
+        <div class="flex" id="jc-c">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <h1 class="content">justify-content:space-between;</h1>
+        <div class="flex" id="jc-sb">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+        <h1 class="content">justify-content:space-around;</h1>
+        <div class="flex" id="jc-sa">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <h1 class="content">justify-content:space-evenly;</h1>
+        <div class="flex" id="jc-se">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+
+        <hr class="line">
+
+        <h1 class="content">._._._._._._._._._.align-items._._._._._._._._._.</h1>
+
+
+        <h1 class="content">align-items:flex-start;</h1>
+        <div class="flex" id="ai-fs">
+            <div class="box" style="height: 30px;">1</div>
+            <div class="box" style="height: 40px;">2</div>
+            <div class="box" style="height: 60px;">3</div>
+            <div class="box" style="height: 30px;">4</div>
+        </div>
+
+        <h1 class="content">align-items:flex-end;</h1>
+        <div class="flex" id="ai-fe">
+            <div class="box" style="height: 30px;">1</div>
+            <div class="box" style="height: 40px;">2</div>
+            <div class="box" style="height: 60px;">3</div>
+            <div class="box" style="height: 30px;">4</div>
+        </div>
+
+        <h1 class="content">align-items:center;</h1>
+        <div class="flex" id="ai-c">
+            <div class="box" style="height: 30px;text-align: center;">1</div>
+            <div class="box" style="height: 40px;text-align: center;">2</div>
+            <div class="box" style="height: 60px;text-align:center;">3</div>
+            <div class="box" style="height: 30px;text-align: center;">4</div>
+        </div>
+
+        <h1 class="content">align-items:strech;</h1>
+        <div class="flex" id="ai-s">
+            <div class="box" style="text-align: center;">1</div>
+            <div class="box" style="text-align: center;">2</div>
+            <div class="box" style="text-align:center;">3</div>
+            <div class="box" style="text-align: center;">4</div>
+        </div>
+
+        <h1 class="content">align-items:baseline;</h1>
+        <div class="flex" id="ai-b">
+            <div class="box" style="height: 30px;text-align: center;">___1____</div>
+            <h1 style="color: white;">__</h1>
+            <div class="box" style="height: 40px;text-align: center;">___2____</div>
+            <h1 style="color: white;">__</h1>
+            <div class="box" style="height: 60px;text-align:center;">___3____</div>
+            <h1 style="color: white;">__</h1>
+            <div class="box" style="height: 30px;text-align: center;">___4___</div>
+        </div>
+
+        <hr class="line">
+
+        <h1 class="content">._._._._._._._._._.align-content._._._._._._._._._.</h1>
+        <p>
+        <h2>Note:</h2> This property only takes effect on multi-line flexible containers, where flex-wrap is set to
+        either
+        (wrap or wrap-reverse). A single-line flexible container (i.e. where flex-wrap is set to its default value,
+        no-wrap) will not reflect align-content.</p>
+        <p>
+            <b>eg:</b>for flex-start=><b>{flex-wrap: wrap;
+                align-content: flex-start;}</b>
+        </p>
+
+        <h1 class="content">align-content:flex-start;</h1>
+        <div class="flex" id="ac-fs" style="height: 400px;">
+            <div class="box" style="width: 70px;">1</div>
+            <div class="box" style="width: 90px;">2</div>
+            <div class="box" style="width: 30px;">3</div>
+            <div class="box" style="width: 40px;">4</div>
+            <div class="box" style="width: 90px;">5</div>
+            <div class="box" style="width: 10px;">6</div>
+            <div class="box" style="width: 40px;">7</div>
+            <div class="box" style="width: 70px;">8</div>
+            <div class="box" style="width: 40px;">9</div>
+            <div class="box" style="width: 50px;">10</div>
+            <div class="box" style="width: 20px;">11</div>
+            <div class="box" style="width: 80px;">12</div>
+            <div class="box" style="width: 50px;">13</div>
+            <div class="box" style="width: 30px;">14</div>
+            <div class="box" style="width: 20px;">15</div>
+            <div class="box" style="width: 30px;">16</div>
+            <div class="box" style="width: 50px;">17</div>
+            <div class="box" style="width: 80px;">18</div>
+
+        </div>
+
+        <h1 class="content">align-content:flex-end;</h1>
+        <div class="flex" id="ac-fe" style="height: 400px;">
+            <div class="box" style="width: 70px;">1</div>
+            <div class="box" style="width: 90px;">2</div>
+            <div class="box" style="width: 30px;">3</div>
+            <div class="box" style="width: 40px;">4</div>
+            <div class="box" style="width: 90px;">5</div>
+            <div class="box" style="width: 10px;">6</div>
+            <div class="box" style="width: 40px;">7</div>
+            <div class="box" style="width: 70px;">8</div>
+            <div class="box" style="width: 40px;">9</div>
+            <div class="box" style="width: 50px;">10</div>
+            <div class="box" style="width: 20px;">11</div>
+            <div class="box" style="width: 80px;">12</div>
+            <div class="box" style="width: 50px;">13</div>
+            <div class="box" style="width: 30px;">14</div>
+            <div class="box" style="width: 20px;">15</div>
+            <div class="box" style="width: 30px;">16</div>
+            <div class="box" style="width: 50px;">17</div>
+            <div class="box" style="width: 80px;">18</div>
+
+        </div>
+
+
+        <h1 class="content">align-content:center;</h1>
+        <div class="flex" id="ac-c" style="height: 400px;">
+            <div class="box" style="width: 70px;">1</div>
+            <div class="box" style="width: 90px;">2</div>
+            <div class="box" style="width: 30px;">3</div>
+            <div class="box" style="width: 40px;">4</div>
+            <div class="box" style="width: 90px;">5</div>
+            <div class="box" style="width: 10px;">6</div>
+            <div class="box" style="width: 40px;">7</div>
+            <div class="box" style="width: 70px;">8</div>
+            <div class="box" style="width: 40px;">9</div>
+            <div class="box" style="width: 50px;">10</div>
+            <div class="box" style="width: 20px;">11</div>
+            <div class="box" style="width: 80px;">12</div>
+            <div class="box" style="width: 50px;">13</div>
+            <div class="box" style="width: 30px;">14</div>
+            <div class="box" style="width: 20px;">15</div>
+            <div class="box" style="width: 30px;">16</div>
+            <div class="box" style="width: 50px;">17</div>
+            <div class="box" style="width: 80px;">18</div>
+
+        </div>
+
+        <h1 class="content">align-content:space-between;</h1>
+        <div class="flex" id="ac-sb" style="height: 400px;">
+            <div class="box" style="width: 70px;">1</div>
+            <div class="box" style="width: 90px;">2</div>
+            <div class="box" style="width: 30px;">3</div>
+            <div class="box" style="width: 40px;">4</div>
+            <div class="box" style="width: 90px;">5</div>
+            <div class="box" style="width: 10px;">6</div>
+            <div class="box" style="width: 40px;">7</div>
+            <div class="box" style="width: 70px;">8</div>
+            <div class="box" style="width: 40px;">9</div>
+            <div class="box" style="width: 50px;">10</div>
+            <div class="box" style="width: 20px;">11</div>
+            <div class="box" style="width: 80px;">12</div>
+            <div class="box" style="width: 50px;">13</div>
+            <div class="box" style="width: 30px;">14</div>
+            <div class="box" style="width: 20px;">15</div>
+            <div class="box" style="width: 30px;">16</div>
+            <div class="box" style="width: 50px;">17</div>
+            <div class="box" style="width: 80px;">18</div>
+
+        </div>
+
+        <h1 class="content">align-content:space-around;</h1>
+        <div class="flex" id="ac-sa" style="height: 400px;">
+            <div class="box" style="width: 70px;">1</div>
+            <div class="box" style="width: 90px;">2</div>
+            <div class="box" style="width: 30px;">3</div>
+            <div class="box" style="width: 40px;">4</div>
+            <div class="box" style="width: 90px;">5</div>
+            <div class="box" style="width: 10px;">6</div>
+            <div class="box" style="width: 40px;">7</div>
+            <div class="box" style="width: 70px;">8</div>
+            <div class="box" style="width: 40px;">9</div>
+            <div class="box" style="width: 50px;">10</div>
+            <div class="box" style="width: 20px;">11</div>
+            <div class="box" style="width: 80px;">12</div>
+            <div class="box" style="width: 50px;">13</div>
+            <div class="box" style="width: 30px;">14</div>
+            <div class="box" style="width: 20px;">15</div>
+            <div class="box" style="width: 30px;">16</div>
+            <div class="box" style="width: 50px;">17</div>
+            <div class="box" style="width: 80px;">18</div>
+
+        </div>
+
+        <h1 class="content">align-content:space-evenly;</h1>
+        <div class="flex" id="ac-se" style="height: 400px;">
+            <div class="box" style="width: 70px;">1</div>
+            <div class="box" style="width: 90px;">2</div>
+            <div class="box" style="width: 30px;">3</div>
+            <div class="box" style="width: 40px;">4</div>
+            <div class="box" style="width: 90px;">5</div>
+            <div class="box" style="width: 10px;">6</div>
+            <div class="box" style="width: 40px;">7</div>
+            <div class="box" style="width: 70px;">8</div>
+            <div class="box" style="width: 40px;">9</div>
+            <div class="box" style="width: 50px;">10</div>
+            <div class="box" style="width: 20px;">11</div>
+            <div class="box" style="width: 80px;">12</div>
+            <div class="box" style="width: 50px;">13</div>
+            <div class="box" style="width: 30px;">14</div>
+            <div class="box" style="width: 20px;">15</div>
+            <div class="box" style="width: 30px;">16</div>
+            <div class="box" style="width: 50px;">17</div>
+            <div class="box" style="width: 80px;">18</div>
+
+        </div>
+
+        <hr class="line">
+
+        <h1 class="content">._._._._._._._._._.gap._._._._._._._._._.</h1>
+        <p>
+        <h2>Note:</h2>explicitly controls the space between flex items. It applies that spacing only between items not
+        on the
+        outer edges.</p>
+
+        <h1 class="content">gap:</h1>
+        <div class="flex" id="g">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+        </div>
+
+        <h1 class="content">gap:row-gap column-gap</h1>
+        <div class="flex" id="g-rc">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+        </div>
+
+        <h1 class="content">gap:row-gap</h1>
+        <div class="flex" id="g-r">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+        </div>
+
+        <h1 class="content">gap:column-gap</h1>
+        <div class="flex" id="g-c">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+        </div>
+
+        <hr class="line">
+
+        <h1 class="content">._._.Properties for the Children(flex items)._._.<br>*</h1>
+
+        <h1 class="content">order</h1>
+        <p>By default, flex items are laid out in the source order. However, the order property controls the order in
+            which they appear in the flex container.</p>
+        <p>*it is use to change the the order of the item ,<b>-it default is "0"</b></p>
+        <div class="flex" id="o">
+            <div class="box-1">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box-2">5</div>
+            <div class="box">6</div>
+
+        </div>
+
+        <h1 class="content">flex-grow:</h1>
+        <p>This defines the ability for a flex item to grow if necessary. </p>
+        <div class="flex" id="fg">
+            <div class="box">1</div>
+            <div class="box-3">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box-3">5</div>
+            <div class="box">6</div>
+
+        </div>
+
+        <h1 class="content">flex-shrink:</h1>
+        <p>This defines the ability for a flex item to shrink if necessary.</p>
+        <div class="flex" id="fs">
+            <div class="box-4">1</div>
+            <div class="box">2</div>
+            <div class="box-4">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box-4">6</div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
