@@ -161,6 +161,37 @@ console.log(oppo);
 console.log(iphone.price);
 console.log(iphone);
 
+//..............................Extending Interfaces...............
+
+interface Mobilee {
+    model: string;
+    price: number;
+    RAM: string;
+    camera: string;
+}
+interface Mobile_update extends Mobilee{
+    update:string
+}
+
+const poco2: Mobile_update = {
+    model: 'poco-x5 pro',
+    price: 21000,
+    RAM: '8GB-RAM',
+    camera: '108MP',
+    update:'v14.0.3.0TMSINXM'
+};
+const oppo2:Mobile_update={
+    model: 'oppo-Reno 7 pro',
+    price: 30000,
+    RAM: '6GB-RAM',
+    camera: '64MP',
+    update:'v10.1.24'
+};
+
+console.log(poco2);
+console.log(oppo2.update);
+
+
 
 
 
