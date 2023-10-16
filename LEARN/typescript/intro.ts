@@ -191,6 +191,16 @@ const oppo2:Mobile_update={
 console.log(poco2);
 console.log(oppo2.update);
 
+//................................union.............
+
+function uni (ans:number|string){
+    console.log(uni);
+}
+  uni(2)
+  uni("two")
+  
+//
+  
 
 
 
