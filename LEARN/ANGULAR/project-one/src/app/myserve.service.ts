@@ -5,9 +5,15 @@ import { HttpClient } from '@angular/common/http'; //s1
   providedIn: 'root'
 })
 export class MyServeService {
-apiUrl:string="https://jsonplaceholder.typicode.com/todos/" //s3
+  apiUrl:string="http://localhost:3000"
+
+// apiUrl:string="https://jsonplaceholder.typicode.com/todos/" //s3
   constructor(private http:HttpClient) { } //s2
-  getToDos(){
-    return this.http.get(this.apiUrl) //s4
+  // getToDos(){
+  //   return this.http.get(this.apiUrl) //s4
+  // }
+  getuser(){
+    return this.http.get(this.apiUrl+"/getAllUsers")
   }
 }
+ 

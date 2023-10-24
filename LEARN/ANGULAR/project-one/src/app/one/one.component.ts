@@ -7,13 +7,18 @@ import { MyServeService } from '../myserve.service';
 })
 export class OneComponent implements OnInit {
   toDo: any[] = [];
+  data:any;
   constructor(private myserve: MyServeService) { }
   ngOnInit(): void {
-    this.myserve.getToDos()
+    // this.myserve.getToDos()
 
-      .subscribe((data: any) => {
-        this.toDo = data
-      }) //s6 or console.log(this.data)
+    //   .subscribe((data: any) => {
+    //     this.toDo = data
+    //   }) //s6 or console.log(this.data)
+    this.myserve.getuser().subscribe( data1=>{
+      this.data=data1;
+    })
+
 
   }
 
