@@ -1,18 +1,100 @@
 <p>one works!</p>
 <!-- {{toDo|json}} -->
+
+
+<!-- get all user -->
+<h1>GET ALL USER</h1>
 <table>
     <tr>
-    
+
         <th>id</th>
         <th>name</th>
         <th>age</th>
         <th>role</th>
+        <th>salary</th>
     </tr>
     <tr *ngFor="let item of data">
         <td>{{item.id}}</td>
-        <td>{{item.user_name}}</td>
+        <td>{{item.name}}</td>
         <td>{{item.age}}</td>
-        <td>{{item.user_role}}</td>
-        
+        <td>{{item.role}}</td>
+        <td>{{item.salary}}</td>
+
     </tr>
 </table>
+
+
+<!-- create user -->
+<h1>CREATE NEW USER</h1>
+<div>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>
+                <input type="number" [(ngModel)]="obj.id" name="id" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>name</td>
+            <td><input type="text" [(ngModel)]="obj.name" name="name"></td>
+        </tr>
+
+        <tr>
+            <td>age</td>
+            <td><input type="number" [(ngModel)]="obj.age" name="age"></td>
+        </tr>
+
+        <tr>
+            <td>role</td>
+            <td><input type="text" [(ngModel)]="obj.role" name="role"></td>
+        </tr>
+
+        <tr>
+            <td>salary</td>
+            <td><input type="number" [(ngModel)]="obj.salary" name="salary"></td>
+        </tr>
+        <button (click)="cnu()">submit</button>
+
+    </table>
+
+
+</div>
+
+<!--get user by id -->
+<h1>GET USER BY ID</h1>
+<div>
+    <tr>
+        <td>ENTER ID</td>
+        <td><input type="text" [(ngModel)]="id" name="id"></td>
+    </tr>
+    <button (click)="getuserbyid()">search</button>
+    <tr *ngFor="let item of res">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.role}}</td>
+        <td>{{item.salary}}</td>
+
+    </tr>
+
+</div>
+
+<!-- update detail -->
+<div>
+    <h2>Update User Details:</h2>
+    <input type="text" placeholder="ID" [(ngModel)]="id" name="id"><br><br>
+    <input type="text" placeholder="Name" [(ngModel)]="name" name="name"><br><br>
+    <input type="text" placeholder="Age" [(ngModel)]="age" name="age"><br><br>
+    <input type="text" placeholder="Role" [(ngModel)]="role" name="role"><br><br>
+    <input type="text" placeholder="Salary" [(ngModel)]="salary" name="salary"><br><br>
+    <button (click)="updatedetail()">Update Details</button>
+  </div>
+  
+
+  <div>
+    <h2>Delete User By ID:</h2>
+    <input type="text" placeholder="Enter ID" [(ngModel)]="id" name="id" /><br /><br />
+    <button (click)="deleteuserbyid(id)">Delete User</button>
+  </div>
+  

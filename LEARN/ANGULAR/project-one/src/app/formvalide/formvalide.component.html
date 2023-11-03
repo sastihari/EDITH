@@ -1,0 +1,114 @@
+<form #form="ngForm" class="container ">
+    {{form.value | json}}
+    {{employee |json }}
+    <div class="row">
+        <!-- firstname -->
+        <div class=" col form mb-3">
+            <label for="firstname" class="formlable">firstname</label>
+            <input type="text" id="firstname" class="form-control" name="firstname" [(ngModel)]="employee.firstname"
+                #f1="ngModel" [class.is-invalid]="f1.invalid && f1.touched || show " [class.is-valid]="f1.valid && f1.touched "
+                required>
+            <!-- invalid:{{f1.valid}}
+        innvalid:{{f1.invalid}}
+        untouched:{{f1.untouched}}
+        touched:{{f1.touched}}
+        dirty:{{f1.dirty}}
+        pristine:{{f1.pristine}} -->
+
+            <p *ngIf="f1.invalid && f1.touched ||show" class="text-danger">First name is required</p>
+        </div>
+        <!-- lastname -->
+        <div class=" col    form mb-3">
+            <label for="lastname" class="formlable">lastname</label>
+            <input type="text" id="lastname" class="form-control" name="lastname" [(ngModel)]="employee.lastname"
+                #f2="ngModel" [class.is-invalid]="f2.invalid && f2.touched ||show" [class.is-valid]="f2.valid && f2.touched "
+                required>
+            <p *ngIf="f2.invalid && f2.touched ||show" class="text-danger">Last name is required</p>
+        </div>
+    </div>
+    <div class="form mb-3 ">
+
+        <select class="form-select" name="department" [(ngModel)]="employee.department" #dep="ngModel"
+            [class.is-invalid]="dep.invalid && dep.touched  ||show" [class.is-valid]="dep.valid && dep.touched ||show" required>
+            <option selected disabled>-SELECT YOUR DEPARTMENT-</option>
+            <option value="MECH">MECH</option>
+            <option value="AERO">AERO</option>
+            <option value="CS">CS</option>
+        </select>
+        <p *ngIf="dep.invalid && dep.touched ||show" class="text-danger">department is required</p>
+
+    </div>
+
+
+
+
+    <div class="form-check">
+        <h6>GENDER</h6>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="male"
+            value="male" [(ngModel)]="employee.gender">
+        <label class="form-check-label" for="flexRadioDefault1">
+            male
+        </label>
+
+    </div>
+    <div class="form-check ">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" name="female"
+            value="female" [(ngModel)]="employee.gender">
+        <label class="form-check-label" for="flexRadioDefault2">
+            female
+        </label>
+
+    </div>
+
+    
+
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email"
+            #email="ngModel" [(ngModel)]="employee.email" 
+            pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}"
+            [class.is-invalid]="email.invalid && email.touched ||show" 
+            [class.is-valid]="email.valid && email.touched"
+            required>
+        <label for="floatingInput">Email address</label>
+        <p *ngIf="email.invalid && email.touched ||show" class="text-danger">Email is required</p>
+        <p *ngIf="email.errors?.['pattern']" class="text-danger"> Invalid email format</p>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password"
+            #password="ngModel" [(ngModel)]="employee.password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$"
+            [class.is-invalid]="password.invalid && password.touched ||show"
+            [class.is-valid]="password.valid && password.touched" required>
+        <label for="floatingPassword">Password</label>
+        <p *ngIf="password.invalid && password.touched ||show" class="text-danger">Please enter a valid password </p>
+        <p *ngIf="password.errors?.['pattern']" class="text-danger">Password must contain at least one lowercase letter,
+            one uppercase letter, one number, and one special character, and be at least 8 characters long</p>
+    </div>
+
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="flexCheck" name="checkbox" [(ngModel)]="employee.agree"
+            #che="ngModel" [class.is-invalid]="che.invalid && che.touched  ||show" [class.is-valid]="che.valid && che.touched "
+            required>
+        <label class="form-check-label" for="flexCheck">
+            I'AGREE
+        </label>
+        <p *ngIf="che.invalid && che.touched ||show" class="text-danger">plese click it</p>
+
+    </div>
+
+
+    <button class="btn btn-primary" (click)=" sub()" >submit</button>
+</form>
+
+<!-- form.valid &&  .................................... [disabled]="form.invalid"-->
+
+<div class="card flex justify-content-center">
+    <p-button label="Submit"></p-button>
+</div>
+
+
+<div class="card flex justify-content-center">
+    <p-button icon="pi pi-check"></p-button>
+    <p-button label="Submit" icon="pi pi-check"></p-button>
+    <p-button label="Submit" icon="pi pi-check" iconPos="right"></p-button>
+</div>
